@@ -1,0 +1,16 @@
+<import src="../contact/contact.wxml" />
+
+<!--导航条--> 
+<view class='navbar2'>
+<view class="navbar"> 
+ <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text> 
+</view> 
+</view>
+ 
+<view hidden="{{currentTab!==0}}"> 
+ <template is="contact"/> 
+</view> 
+ 
+<view hidden="{{currentTab!==1}}"> 
+ <template is="about"/> 
+</view> 

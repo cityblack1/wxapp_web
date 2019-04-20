@@ -1,0 +1,20 @@
+<view>
+  <button class='green top' bindtap='saveToPhone'>保存到手机</button>
+
+  <image src='{{src}}' style='width:100%' mode='widthFix'></image>
+
+</view>
+<view class='botton-item'>
+ <view>
+    <text>id: {{id}}</text>
+  </view>
+  <view>
+    <text>标题: {{title}}</text>
+  </view>
+ 
+  <view>
+    <text>创建日期: {{created}}</text>
+  </view>
+  <button bindtap='reBack'>返回</button>
+  <button bindtap='navToFeedback' class='red'>我要举报</button>
+</view>

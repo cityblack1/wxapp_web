@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/wall/wall",
+    "pages/image/image",
+    "pages/image_detail/detail",
+    "pages/article/article",
+    "pages/contact/contact",
+    "pages/contact/feedback"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "大佬…我晕猫 ",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#b7b7b7",
+    "backgroundColor": "#fff",
+    "selectedColor": "#e53927",
+    "list": [
+      {
+        "pagePath": "pages/wall/wall",
+        "text": "瞄图",
+        "iconPath": "static/image/my.png",
+        "selectedIconPath": "static/image/mys.png"
+      },
+      {
+        "pagePath": "pages/image/image",
+        "text": "上传",
+        "iconPath": "static/image/my.png",
+        "selectedIconPath": "static/image/mys.png"
+      },
+      {
+        "pagePath": "pages/article/article",
+        "text": "联系我",
+        "iconPath": "static/image/my.png",
+        "selectedIconPath": "static/image/mys.png"
+      }
+    ]
+  }
+}

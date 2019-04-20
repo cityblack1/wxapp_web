@@ -1,0 +1,19 @@
+<view class="container">
+  <image class='index-img' src='/static/images/4.png'></image>
+  <image class='cat-img' src='/static/images/8.jpg'></image>
+  <!-- <text class='index-title'>晕～猫</text> -->
+  <navigator url="../wall/wall" open-type="reLaunch">
+    <!-- <view class='button-container' bindtap='tapEntry'>
+      <text class='button-text'>发现身边的<text class='inner-text'>"可吸猫"</text></text>
+    </view> -->
+    <view class='button-container'>
+      <text class='button-text inner-text'>喵图</text>
+    </view>
+   </navigator>
+   <navigator url="../image/image" open-type="reLaunch">
+    <view class='button-container'>
+      <text class='button-text'>上传</text>
+    </view>
+    </navigator>
+    
+</view>

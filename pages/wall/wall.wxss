@@ -1,0 +1,45 @@
+.tip {
+  float:left;
+  font-size: 35rpx;
+  color: gray
+}
+
+.col-name {
+  float: left
+}
+
+.image-item {
+  border-radius: 20rpx;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.like {
+  float: right;
+  margin-top: 5rpx;
+  border: 1px solid white;
+  width: 150rpx;
+  height: 48rpx;
+  border-radius: 4rpx;
+  text-align: center;
+}
+
+.like .like-nums {
+  font-size: 40rpx;
+  color: white;
+}
+
+.button {
+  float: right;
+  }
+
+.button-container {
+  height: 59rpx;
+  /* background-color: #d4d4d4; */
+}
+
+.order {
+  font-family: Kaiti;
+  color: red;
+  font-size: 47rpx;
+}

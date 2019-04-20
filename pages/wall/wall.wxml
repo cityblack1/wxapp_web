@@ -1,0 +1,44 @@
+<view class="container">
+  <scroll-view scroll-top="{{scrollTop}}" style="height: {{windowHeight}}px; width: {{windowWidth}}px;" scroll-y="true" bindscroll="scroll" bindscrolltolower="tapName" class="weui-panel weui-panel_access" lower-threshold="20">
+
+  <!-- <swiper indicator-dots="true" indicator-color="#c8cfd4" indicator-active-color="#f1ea9c" autoplay="true" interval="3000" circular="true" style='height:40%'>
+    <swiper-item>
+      <image mode=widthFix" src="/static/images/index.jpg" class="slide-image" style='width:100%' />
+    </swiper-item>
+    <swiper-item>
+      <image mode=widthFix" src="/static/images/index.jpg" class="slide-image" style='width:100%' />
+    </swiper-item>
+    <swiper-item>
+      <image mode=widthFix" src="/static/images/index.jpg" class="slide-image" style='width:100%' />
+    </swiper-item>
+    <swiper-item>
+      <image mode=widthFix" src="/static/images/index.jpg" class="slide-image" style='width:100%' />
+    </swiper-item>
+  </swiper> -->
+  <text class="tip">tip:长按进入详情</text>
+
+  <view class='button-container'>
+    <view class='button'>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          排序：<text class='order'>{{array[order]}}</text>
+        </view>
+      </picker>
+      <!-- <view class='like'>
+  <text class='like-nums'>点赞数</text>
+  </view> -->
+    </view>
+  </view>
+  <view>
+    <block wx:for="{{new_images}}" wx:for-item="array">
+   <image class="image-item" wx:for="{{array}}" src='https://cityblack1.cc{{item.image}}' data-title="{{item.title}}" data-src="{{item.image}}" data-created="{{item.created}}" lazy-load="true" style='width:{{item.width - 2}}%;height:{{item.height}}px' id='{{item.id}}' wx:key="id" catchlongpress='navToDetail' bindtap='preview_images'></image>
+    </block>
+  </view>
+  </scroll-view>
+
+   <view>
+    <loading hidden="{{hidden}}" bindchange="loadingChange">
+      加载中...
+    </loading>
+  </view> 
+</view>

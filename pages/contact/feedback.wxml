@@ -1,0 +1,25 @@
+<view>
+  <view class="title">
+    <text>举报位置:
+    [<block wx:if="{{content_type == 12}}">图片</block><block wx:else>文章</block>]-{{ object_id }}
+    </text>
+  </view>
+
+  <view class="title">
+    <text>标题: </text>
+
+  </view>
+  <view class="title2">
+    <input value='{{title}}' bindinput="bindTitleArea" placeholder='请输入标题'></input>
+  </view>
+
+  <view class="title">
+    <text>内容</text>
+  </view>
+  <view>
+    <textarea class="textarea" bindinput="bindTextArea" value="{{ content }}" />
+  </view>
+  <view class="button_area">
+    <button class="button" bindtap="bindSubmit">提交</button>
+  </view>
+</view>

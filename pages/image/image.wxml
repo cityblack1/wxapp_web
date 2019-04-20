@@ -1,0 +1,20 @@
+<view class="container" style="flex-direction: column; align-items: center;">
+  <view class="top">
+    <button bindtap="gotoShow">点击上传照片</button>
+  </view>
+  <view>
+    <image class="show-image" mode="aspectFit" src="{{src}}"></image>
+  </view>
+
+  <form bindsubmit="formSubmit" bindreset="formReset" class='form'>
+    <view class="title2">
+      <input name="name" placeholder="来为图片起个名字吧" value='{{value}}' />
+    </view>
+    <view class="btn-area">
+      <button class="green" formType="submit">提交</button>
+      <button formType="reset" class='red'>重置</button>
+    </view>
+  </form>
+
+  <text hidden='true'>您的位置: {{loc}}</text>
+</view>

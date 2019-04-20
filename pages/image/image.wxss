@@ -1,0 +1,41 @@
+button {
+  background-color: #8d8d8d;
+  color: #fff;
+  height: 100rpx;
+  margin-bottom: 1%;
+  width: 95%;
+}
+
+.form {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.green {
+  margin-top: 30rpx;
+  background-color: #1aad19;
+}
+
+.red {
+  background-color: red;
+}
+
+.title2 {
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+  padding-left: 10rpx;
+  border: 1px solid #c8c8cd;
+  width: 94%;
+  margin-left: 2%;
+}
+
+.top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.show-image {
+  margin-top:15%
+}

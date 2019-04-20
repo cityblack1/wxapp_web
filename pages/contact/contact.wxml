@@ -1,0 +1,42 @@
+<template name="contact">
+  <view class="title">
+    <text>标题: </text>
+
+  </view>
+  <view class="title2">
+    <input value='{{title}}' placeholder='请输入标题' bindinput="bindTitleArea"></input>
+  </view>
+
+  <view class="title">
+    <text>内容</text>
+  </view>
+  <view>
+    <textarea class="textarea" bindinput="bindTextArea" value="{{ content }}" />
+  </view>
+  <view class="button_area">
+    <button class="button" bindtap="bindSubmit">提交</button>
+  </view>
+</template>
+
+<template name="about">
+<view class='about'>
+<text>
+    Hi！我是cityblack1，一个大五学生，就读于长安大学。前四年, 我攻读建筑设计。不仅经常熬夜画图，也学习各种设计软件的使用。我曾经坚定不移的认为我将会进入一家设计院，在那里挥洒青春和汗水。但是我大五的时候却动摇了。
+
+    简单来说就是我想转行——告别PS，CAD，SU，SAI，以及曾经画过的一张张的设计图，离开建筑设计行业。
+
+    我迷茫的学习着JAVA，C#和C，试图从这三门语言中找到自己应该做的，以及可以做的。直到我接触到了Python。我被Python的语法所震撼，被她的设计理念所惊艳。简洁但丰富的内涵——少即是多，我看到了著名建筑大师密斯·范德罗的理念。从那一刻起我不在迷茫。
+
+    我用了4个月的时间，从对编程一无所知，到学会了很多Python高级语法，也看到了Python简约但不简单的语法逻辑，意识到了没有任何一门语言是简单的。
+
+    9月份，我用半个月的时间写了自己的第一个大项目——一个博客，并部署和维护到了github以及云端服务器。我认为我学会了Scrapy，Django等框架，熟悉了Socket编程，高级Python语法，前端知识，常用算法，简单数据处理等能力。我对自己的自学能力和已有知识有了更准确的认识，我可以写一些自己独创的项目来满足自己的某些特殊要求了，于是开发了这个微信小程序。
+    我喜欢猫，更喜欢Python～
+
+    个人博客：https://www.cityblack1.cc
+    （里面有我的自学心得和项目经验~）
+    （虽然自己还是Rookie，但还是有一点点小成就滴~)
+    知乎：隔热城市
+
+</text>
+</view>
+</template>
